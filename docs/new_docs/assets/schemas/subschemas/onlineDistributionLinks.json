@@ -1,0 +1,25 @@
+{
+  "$id": "elter://metadata.schemas/subschemas/onlineDistributionLinks.json",
+  "type": "array",
+  "x-label": "Online Distribution Links",
+  "x-tooltip": "Links and URIs that refer dynamic online datasources related to this dataset.",
+  "x-required": false,
+  "items": {
+    "type": "object",
+    "properties": {
+      "onlineDistributionLinkType": {
+        "type": "string",
+        "enumValues": [
+          "WMS",
+          "WFS",
+          "STA",
+          "SOS",
+          "Grafana"
+        ]
+      }
+    },
+    "onlineDistributionLinkURI": {
+      "type": "string"
+    }
+  }
+}
