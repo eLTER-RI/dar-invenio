@@ -19,7 +19,34 @@
       }
     },
     "onlineDistributionLinkURI": {
-      "type": "string"
-    }
+      "type": "string",
+      "format": "uri"
+    },
+    "onlineDistributionLinkExpirationDate": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "onlineDistributionLinkLastChecked": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "examples" : [
+        [
+            {
+                "onlineDistributionLinkType": "WMS",
+                "onlineDistributionLinkURI": "https://example.com/wms",
+                "onlineDistributionLinkExpirationDate": "2025-12-31T23:59:59Z",
+                "onlineDistributionLinkLastChecked": "2025-04-10T10:00:00Z"
+            },
+            {
+                "onlineDistributionLinkType": "STA",
+                "onlineDistributionLinkURI": "https://timeseries.dev.elter-ri.eu/sta/elter_testgroup_481401d8005f4f988de3b8fe4f386614/v1.1",
+                "onlineDistributionLinkExpirationDate": "2027-12-31T23:59:59Z",
+                "onlineDistributionLinkLastChecked": "2025-04-10T11:00:00Z"
+            }
+        ]
+        
+    ]
+    
   }
 }
